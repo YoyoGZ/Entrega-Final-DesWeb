@@ -204,38 +204,6 @@ body{
 }
 
 /* Clases de Animación importadas */
-
-.cartel{
-	-webkit-animation: cartel 1.7s 1;
-	-webkit-transform-origin: top left;
-}
-
-@-webkit-keyframes cartel{
-	20%{
-		-webkit-transform: rotate(35deg);
-	}
-}
-
-.cartel2{
-	-webkit-animation: cartel 1.7s 1;
-	-webkit-transform-origin: top;
-}
-
-@-webkit-keyframes cartel{
-	20%{
-		-webkit-transform: rotate(35deg);
-	}
-}
-.chicle{
-	-webkit-animation: 2s chicle 1;
-}
-
-@-webkit-keyframes chicle{
-	60%{
-		-webkit-transform: 
-		        scaleX(1.15) scaleY(0.85);
-	}
-}
 .giro{
         -webkit-transform-origin: center;
         -webkit-animation: 2.5s giro 1;
@@ -378,6 +346,15 @@ body{
     padding-left: 10px;
     margin-left: 10px;
     width: 99%;
+}
+.btn-baris{
+    background-color: rgb(224, 96, 96);
+    color: black;
+    font-size: 1,5rem;
+}
+
+.btn-baris:hover{
+    background-color: rgb(232, 216, 216);
 }
 
 
