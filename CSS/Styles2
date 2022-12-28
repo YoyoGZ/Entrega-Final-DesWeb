@@ -1,0 +1,162 @@
+/* Clases para Animaciones y otros */
+.linear-gradient{
+    background: -linear-gradient(top rgb(209, 85, 85), light rgb(50, 17, 17))
+}
+
+.transform:hover{
+	
+}
+
+.rotate:hover{
+    transform: rotateZ('40deg');
+    transition: all 2s;
+}
+
+.scale:hover{
+    transform: scale(1.9);
+    transition: all 2s;
+	 
+}
+
+.skew:hover{
+	
+}
+
+@keyframes animateFig{
+    20%{
+    -webkit-transform:
+        perspective(600px)
+        translateZ(120px)
+        rotateY(170deg)
+}
+}
+.animate{
+    animation-name:animateFig; 
+    animation-duration: 1.5s;
+    animation-iteration-count:1;
+    -webkit-backface-visibility: visible;
+    padding: 0;
+}
+
+
+.transition{
+	
+}
+
+.transition:hover{
+	
+}
+
+@keyframes textAlpha{
+	
+}
+/*
+.giro3D{
+	-webkit-animation: giroTresd 1,5s 1;
+	-webkit-backface-visibility: visible;
+}
+
+@-webkit-keyframes giroTresd{
+	40%};
+	webkit-transform: perspective(800px);
+	    translateZ(120px);
+	    rotateY(170deg);
+
+.cartel:hover{
+	-webkit-animation: 1s cartel 1;
+	-webkit-transform-origin: top center;
+}
+
+@-webkit-keyframes cartel{
+	20%{
+		-webkit-transform: rotate(15deg);
+	}
+
+/*=============================GRIDS ===========================*/
+
+/*Definimos que nuestro contenedor se muestre como GRID */
+.grid{
+	width:99.9%;
+	display: grid;
+}
+
+/*Definimos nuestro templates por filas y columnas -- 2 cols - 3 rows -- gap */
+.grid-col-row{
+	grid-template-columns: 20% 50% 30%;
+	grid-template-rows: repeat(7,1fr)
+	/* row-gap: 20px;
+	column-gap: 10px;
+	gap: 10px;*/
+}
+
+/*Definimos nuestro templates por áreas --- 3 cols - 3 rows - areas*/
+.template-areas{
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: 80px 60px 60px 60px 60px 60px 30px;
+	grid-template-areas: 
+	"nav nav nav" 
+	"main main main"
+    "produ produ produ"
+    "produ produ produ"
+    "produ produ produ"
+    "produ produ produ"
+    "pie pie pie";
+}
+#botonera{
+	grid-area: nav;
+}
+
+#centro{
+	grid-area: main;
+}
+
+#productos{
+	grid-area: produ;
+}
+
+#pie{
+	grid-area: pie;
+}
+
+/*Posición de los elementos */
+.justify-items{
+	justify-items: center;
+}
+
+.align-items{
+	align-items: center;
+}
+
+/*Posición del contenido */
+.justify-content{
+	/* definimos 3 cols de 300px -- height del contenedor en 500px*/
+	grid-template-columns: repeat(3,300px);
+	height: 500px;
+	justify-content: center;
+}
+
+.justify-content div{
+		padding: 20px;
+		text-align: center;
+	}
+
+.align-content{
+	align-content: center;
+}
+
+
+/* definimos 3 cols de 200px -- height del contenedor en 500px*/
+.column-row-start-end{
+	grid-template-columns: repeat(3,200px);
+	height: 500px;
+}
+
+/* definimos inicio y fin de row y start de una celda*/
+.column-row-start-end-item{
+	/* grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 3; */
+	grid-column: 1/3;
+	grid-row: 1/3;
+}

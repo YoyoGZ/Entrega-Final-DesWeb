@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400&family=Roboto:wght@300;400&display=swap');
+
+html{
+    font-size: 62.5%;
+}
+/* Selector Reset (*) universal */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Selectores de etiqueta */
+h1{
+    color: black;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+h2{
+    color: crimson;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    padding-bottom: 20px;
+}
+h3{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    text-decoration: underline;
+}
+nav img{
+    width: 180px;
+}
+.bg-nav
+    {background-color: rgba(222, 195, 176, 0.6);
+}
+nav ul{
+    display:flex;
+}
+nav ul li a:hover{
+    color: red;
+    text-decoration: underline;
+}
+nav p{
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4rem;
+    text-align: center;
+}
+nav ul li{
+    display: flex;
+    color: rgb(5, 5, 130);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+    list-style: none;
+    font-weight: 800;
+    margin-right: 25px;
+    margin-top: 5px;
+}
+
+body{
+    display: inline-block;
+    background-image: url(../IMG/fotos/fondos/double-bubble.webp);
+    background-attachment: fixed;
+}
+
+/* Selectores de clase */
+.titu-head{
+    color: black;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 800;
+    position: sticky;
+}
+
+.titu-main{
+    text-align: center;
+    font: weight 700px;
+    font-size: 5rem;
+    margin-top: 30px, 30px;
+    padding: 20px, 30px;
+}
+.texto-main{
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    margin-left: 15px;
+    margin-top: 40px;
+    line-height: 3.5rem;
+
+}
+.fig-main{
+    padding: 20px 30px;
+    margin: 20px 10px;
+    justify-content:space-around;
+}
+.texto-fig-prod{
+        color:black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        padding-top: 50px;
+        padding-bottom: auto;
+        margin-left: 50px;
+        border-color: black;
+        border-style: double;
+}
+.img-header{
+    position: relative;
+    width: 95%;
+    height: 400px;
+    justify-content:space-around;
+    align-items:baseline;
+    margin-top: 40px;
+    padding: 50px 30px;
+}
+
+.titu-prodestac{
+    text-align: center;
+    font: weight 700px;
+    margin-bottom: 30px;
+}
+
+/* clases para form y plano */
+
+.texto-form{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+}
+.posic-pie{
+    display:flex;
+    margin-top: 40px;
+    justify-content:center;
+        
+}
+
+.pie{
+    background-color: rgb(189, 233, 233,);
+    background: linear-gradient(to top, rgb(189, 233, 233), rgb(96, 124, 96));
+    background-position: center;
+    display: inline;
+    width: 100%;
+    height: 105%;
+    padding: 15px, 15px;
+    margin: 20px 20px
+}
+
+.text-dark{
+    color:black
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.text-justify{
+    text-align: justify;
+}
+.text-bold{
+    font: weight 800;
+}
+.justify-content-space{
+    padding: 15px 15px;
+    justify-content:space-between;
+    
+}
+.justify-content-center{
+    justify-content: center;
+}
+
+.justi-conten{
+    justify-content:baseline;
+}
+.align-items{
+    align-items:baseline;
+
+}
+
+.d-flex{
+    display: flex;
+}
+
+.posi-wsp{
+    position: center;
+    padding-top: 10px;
+}
+.posic-header{
+    display: flex;
+    position: center;
+    margin-top:  15px;
+    padding-top: 15px;
+    padding-left: 30px;
+}
+
+/* Clases de Animación importadas */
+
+.cartel{
+	-webkit-animation: cartel 1.7s 1;
+	-webkit-transform-origin: top left;
+}
+
+@-webkit-keyframes cartel{
+	20%{
+		-webkit-transform: rotate(35deg);
+	}
+}
+
+.cartel2{
+	-webkit-animation: cartel 1.7s 1;
+	-webkit-transform-origin: top;
+}
+
+@-webkit-keyframes cartel{
+	20%{
+		-webkit-transform: rotate(35deg);
+	}
+}
+.chicle{
+	-webkit-animation: 2s chicle 1;
+}
+
+@-webkit-keyframes chicle{
+	60%{
+		-webkit-transform: 
+		        scaleX(1.15) scaleY(0.85);
+	}
+}
+.giro{
+        -webkit-transform-origin: center;
+        -webkit-animation: 2.5s giro 1;
+        width: 100%;
+        padding-left: 10px;
+    }
+    
+@-webkit-keyframes giro{
+        0%{
+            opacity: 0;
+            -webkit-transform: rotate(-200deg);
+}
+}
+/* CSS de GRID y Responsive  */
+.grid{
+    width: 99%;
+    display: grid;
+}
+
+.grid-templ-col-row{
+    grid-template-columns: 1,1fr;
+    grid-template-rows: 9,1fr;
+}
+
+.templ-areas{
+    grid-template-columns: 1;
+    grid-template-rows: 9,1fr;
+    justify-content: center;
+    align-content: center;
+}
+	
+/* Declara contenedor para Mobile */
+#contenedor-grid{
+    display: grid;
+    grid-template-columns: 1;
+	grid-template-rows: 8, 1fr;
+    grid-template-areas:
+    "nave"
+    "figus"
+    "figus"
+    "figus"
+    "figus"
+    "formu"
+    "formu" 
+    "pie"		
+}
+
+/* Declara contenedor para Tablet */
+@media (min-width:768px){
+	#contenedor-grid{
+        display: grid;
+		grid-template-columns: 2, 1fr;
+		grid-template-rows: 5, 1fr;
+        grid-template-areas:
+    "nave nave"
+    "figus figus"
+    "figus figus"
+    "formu formu"
+    "pie pie" ;
+	}
+}
+
+/* Declara contenedor para Desktop */
+@media (min-width:1024px){
+	#contenedor-grid{
+        grid-template-columns: 3, 1fr;
+		grid-template-rows: 7, 1fr;
+        grid-template-areas:
+    "nave nave"
+    "figus figus"
+    "figus figus"
+    "formu formu"
+    "pie pie" ;        
+		
+	}
+}
+/* declara template-areas */
+#titu{
+    grid-area: titu;
+}
+
+#nave{
+    grid-area: nave;
+}
+
+#figus{
+    grid-area: figus;
+    padding-top: 18px;
+}
+
+#formu{
+    grid-area: formu;
+    padding: 15px, 15px;
+}
+
+#pie{
+    grid-area: pie;
+}
+/* clases para reubicar items en Pedidos */
+
+/* titulo */
+.ubic-titu{
+    font-family: Open Sans;
+    font-size: 3.5rem;
+    font-weight: 800;
+    padding-top: 15px;
+    margin-left: 5px;
+    justify-content:start;
+}
+
+.posic-carus{
+    display: block;
+    padding-top: 80px, 80px;
+    height: 100%;
+    width: 80%;
+}
+.tama-figus{
+    display: flex;
+    display: inline-block;
+    width: 80%;
+}
+
+.column{
+    flex-direction: column;
+    align-items:center;
+    padding-left: 30px;
+}
+
+.ubic-form{
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1.8rem;
+    padding: 20px,20px;
+    margin: 10px, 10px;
+}
+
+.align-iframe{
+    display: block;
+    align-items: center;
+    padding-left: 10px;
+    margin-left: 10px;
+    width: 99%;
+}
+
+
