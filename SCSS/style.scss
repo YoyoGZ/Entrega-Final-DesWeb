@@ -1,0 +1,27 @@
+//imports
+@import "_vars";
+@import "_footer";
+@import "_nav";
+@import "_comunes";
+@import "_productos";
+
+//fonts
+//Roboto
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+//Nunito normal e Italico
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,300&family=Roboto:wght@300;400&display=swap');
+
+//Open Sans
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400&family=Roboto:wght@300;400&display=swap");
+
+html{
+    font-size:62.5%
+}
+
+//Selector Reset
+*{
+    padding: 0;
+    margin: 0;
+}
+
