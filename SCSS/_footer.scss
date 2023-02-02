@@ -1,1 +1,65 @@
+//grid en footer
+.grid-pie{
+    grid-template-columns:repeat (2,50%);
+    grid-template-rows: repeat(4,25%);
+    justify-content:center;
+    align-content: center;
+    align-items: center;
+    row-gap: 3px;
+    column-gap: 10px;
+    padding-top: 10px;
+}
 
+.templa-pie{
+    grid-template-columns:repeat (2,50%);
+    grid-template-rows:repeat (4,25%);
+    grid-template-areas: 
+    "tit-face tit-face"
+    "face insta"
+    "tit-wsp tit-wsp"
+    "wsp wsp";
+}
+
+.pie{
+    background-color: $footColor;
+    background: linear-gradient(to top, rgb(189, 233, 233), rgb(96, 124, 96));
+    display:inline-flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 25px;
+}
+// - Declaración de Id
+
+#tit-face{
+    grid-area:"tit-face";
+    display: block;
+    padding-top: 1px;
+    justify-content: start;
+}
+
+#face
+    {grid-area:"face";
+    display: flex;
+    justify-content: start;
+}
+
+#insta
+    {grid-area:"insta";
+    display: flex;
+    justify-content: center;
+}
+
+#tit-wsp{
+    grid-area:"tit-wsp";
+    display: inline-block;
+    justify-content: end;
+}
+
+#wsp
+    {grid-area:"wsp";
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: -10px;
+    margin-bottom: 8px;
+    }
